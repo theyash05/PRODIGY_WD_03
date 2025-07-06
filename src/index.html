@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="celebration-overlay" class="hidden">
+        <div id="celebration-message"></div>
+        <div class="confetti"></div>
+    </div>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="game-mode">
+            <button id="two-player">2 Player</button>
+            <button id="vs-ai">Vs AI</button>
+        </div>
+        <div id="board" class="board"></div>
+        <div id="status"></div>
+        <button id="restart">Restart</button>
+    </div>
+    <div class="bg-xo">
+        <svg class="xo-x" viewBox="0 0 100 100">
+            <g>
+                <rect x="40" y="10" width="20" height="80" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6"/>
+                <rect x="10" y="40" width="80" height="20" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6" transform="rotate(45 50 50)"/>
+                <rect x="10" y="40" width="80" height="20" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6" transform="rotate(-45 50 50)"/>
+            </g>
+        </svg>
+        <svg class="xo-o" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="38" fill="#fff" stroke="#ff8800" stroke-width="12"/>
+            <circle cx="50" cy="50" r="22" fill="#181818"/>
+        </svg>
+        <svg class="xo-x2" viewBox="0 0 100 100">
+            <g>
+                <rect x="40" y="10" width="20" height="80" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6"/>
+                <rect x="10" y="40" width="80" height="20" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6" transform="rotate(45 50 50)"/>
+                <rect x="10" y="40" width="80" height="20" rx="10" fill="#fff" stroke="#ff8800" stroke-width="6" transform="rotate(-45 50 50)"/>
+            </g>
+        </svg>
+        <svg class="xo-o2" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="38" fill="#fff" stroke="#ff8800" stroke-width="12"/>
+            <circle cx="50" cy="50" r="22" fill="#181818"/>
+        </svg>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
